@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Résidences Ébène | Abidjan</title>
+<meta name="description" content="Résidences meublées à Cocody, Abidjan : studios et appartements pour courts et longs séjours.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23F77F00'/%3E%3Crect x='1' width='1' height='2' fill='%23ddd'/%3E%3Crect x='2' width='1' height='2' fill='%23009E60'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--o:#F77F00;--g:#009E60;--gd:#00774c;--ink:#13261d;--mut:#4f6158;--line:#e3e9e5}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:400 1rem/1.65 "Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff}
+.wrap{width:min(1160px,92%);margin:0 auto}
+h1,h2,h3,.brand b,.stats strong{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.02em;line-height:1.12}
+.nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav::before{content:"";display:block;height:5px;background:linear-gradient(90deg,var(--o) 0 33.34%,#fff 0 66.67%,var(--g) 0)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:linear-gradient(90deg,var(--o) 0 33.34%,#fff 0 66.67%,var(--g) 0)}
+.brand b{font-size:1.2rem}
+.menu{display:flex;gap:30px;font-weight:500;color:var(--mut)}
+.btn{font:600 .98rem "Hanken Grotesk",system-ui,sans-serif;padding:.85rem 1.5rem;border-radius:999px;border:0;cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--o);outline-offset:3px}
+.btn.p{background:var(--gd);color:#fff}
+.btn.s{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px var(--o)}
+.btn.o{background:var(--o);color:var(--ink)}
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+h1{font-size:clamp(2.3rem,5vw,4rem);margin-bottom:22px}
+.lead{font-size:1.15rem;color:var(--mut);max-width:50ch;margin-bottom:32px}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
+.ticks{list-style:none;display:grid;gap:8px;color:var(--ink);font-weight:500}
+.ticks li::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--g);margin-right:12px}
+.arches{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:end;height:430px}
+.arch{border-radius:999px 999px 8px 8px;animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.a1{height:76%;background:var(--o)}
+.a2{height:100%;border:2px solid var(--g);display:grid;place-items:center;animation-delay:.12s}
+.a3{height:58%;background:var(--g);animation-delay:.24s}
+.a2 svg{width:46%;fill:none;stroke:var(--gd);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+@keyframes rise{from{transform:translateY(50px);opacity:0}}
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stats .wrap>div{padding:34px 24px;border-left:1px solid var(--line)}
+.stats .wrap>div:first-child{border-left:0;padding-left:0}
+.stats strong{display:block;font-size:2.5rem;color:var(--gd)}
+.stats span{color:var(--mut)}
+section{padding:96px 0}
+h2{font-size:clamp(1.9rem,3.4vw,2.8rem);margin-bottom:18px}
+.intro{color:var(--mut);max-width:46ch}
+.split{display:grid;grid-template-columns:.9fr 1.4fr;gap:72px;align-items:start}
+.rows{list-style:none}
+.rows li{display:grid;grid-template-columns:34px 1fr;gap:6px;padding:26px 0;border-bottom:1px solid var(--line)}
+.rows li:first-child{padding-top:0}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--o);margin-top:8px}
+.rows li:nth-child(even) .dot{background:var(--g)}
+.rows h3{font-size:1.3rem;margin-bottom:6px}
+.rows p,.vals p,.steps p{color:var(--mut)}
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:48px}
+.vals>div{border-top:4px solid var(--o);padding-top:20px}
+.vals>div:nth-child(2){border-color:var(--g)}
+.vals>div:nth-child(3){border-color:var(--ink)}
+.vals h3{font-size:1.25rem;margin-bottom:8px}
+.why h2{max-width:20ch}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:48px}
+.steps li{border-top:2px solid var(--line);padding-top:22px}
+.steps span{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;font-weight:600;margin:-43px 0 18px}
+.steps h3{font-size:1.2rem;margin-bottom:6px}
+.band{position:relative;overflow:hidden;background:var(--gd);color:#fff;border-radius:32px;padding:64px;display:grid;grid-template-columns:1.4fr auto;gap:32px;align-items:center}
+.band h2{max-width:20ch;margin-bottom:10px}
+.band p{color:#d7efe4;max-width:46ch}
+.band::after{content:"";position:absolute;right:-30px;bottom:-60px;width:210px;height:290px;border-radius:999px 999px 0 0;background:var(--o);opacity:.9}
+.band .btn{position:relative;z-index:1;margin-right:150px}
+footer{border-top:1px solid var(--line);padding:56px 0 32px;color:var(--mut)}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h3{font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:1rem;color:var(--ink);margin-bottom:10px;letter-spacing:0}
+footer p{margin-bottom:4px}
+.copy{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:.9rem;width:min(1160px,92%);margin-inline:auto}
+@media(max-width:860px){
+.menu{display:none}
+.hero{padding-top:44px}
+.hero .wrap,.split,footer .wrap,.band{grid-template-columns:1fr;gap:36px}
+.arches{height:300px}
+.stats .wrap,.steps{grid-template-columns:repeat(2,1fr)}
+.stats .wrap>div{border-left:0;padding-left:0;border-top:1px solid var(--line)}
+.vals{grid-template-columns:1fr}
+section{padding:64px 0}
+.band{padding:40px 28px}
+.band .btn{margin-right:0;justify-self:start}
+.band::after{width:120px;height:170px;right:-20px;bottom:-40px}
+}
+@media(prefers-reduced-motion:reduce){.arch{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<!-- Maquette : remplacez le nom, les textes, les chiffres et les coordonnées par ceux du client. -->
+<header class="nav"><div class="wrap">
+<div class="brand"><span class="mark"></span><b>Résidences Ébène</b></div>
+<nav class="menu"><span>Accueil</span><span>Logements</span><span>Pourquoi nous</span><span>Réservation</span><span>Contact</span></nav>
+<button class="btn p" type="button">Réserver un séjour</button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div>
+<h1>Des séjours meublés confortables, au calme de Cocody.</h1>
+<p class="lead">Studios et appartements équipés, entretenus et sécurisés pour quelques nuits ou plusieurs mois, avec une réservation simple par téléphone ou WhatsApp.</p>
+<div class="actions"><button class="btn p" type="button">Réserver un séjour</button><button class="btn s" type="button">Voir les logements</button></div>
+<ul class="ticks"><li>Logements équipés et entretenus</li><li>Accueil et conseils sur place</li><li>Réservation directe avec l’équipe</li></ul>
+</div>
+<div class="arches" aria-hidden="true">
+<div class="arch a1"></div>
+<div class="arch a2"><svg viewBox="0 0 24 24"><path d="M3 18V6M3 14h18v4M21 14v-3a3 3 0 00-3-3h-7v6"/><circle cx="7" cy="11" r="1.6"/></svg></div>
+<div class="arch a3"></div>
+</div>
+</div></section>
+<div class="stats"><div class="wrap"><div><strong>7 j / 7</strong><span>accueil et assistance</span></div><div><strong>Wi-Fi</strong><span>inclus dans chaque logement</span></div><div><strong>1 nuit</strong><span>séjour minimum</span></div><div><strong>Cocody</strong><span>quartier calme et bien desservi</span></div></div></div>
+<section><div class="wrap split">
+<div><h2>Nos logements</h2><p class="intro">Du studio pour une nuit à l’appartement pour plusieurs mois.</p></div>
+<ul class="rows"><li><span class="dot"></span><div><h3>Studios meublés</h3><p>Pratiques et lumineux, idéaux pour un séjour professionnel.</p></div></li><li><span class="dot"></span><div><h3>Appartements deux pièces</h3><p>Plus d’espace pour les familles et les séjours prolongés.</p></div></li><li><span class="dot"></span><div><h3>Séjours longue durée</h3><p>Des conditions adaptées aux missions de plusieurs semaines.</p></div></li><li><span class="dot"></span><div><h3>Ménage et linge de maison</h3><p>Un logement propre à l’arrivée et un entretien régulier.</p></div></li><li><span class="dot"></span><div><h3>Sécurité et accès contrôlé</h3><p>Une résidence surveillée pour séjourner l’esprit tranquille.</p></div></li><li><span class="dot"></span><div><h3>Assistance et transferts</h3><p>Conseils sur le quartier et aide pour vos déplacements.</p></div></li></ul>
+</div></section>
+<section class="why"><div class="wrap">
+<h2>Un séjour comme à la maison, sans mauvaise surprise.</h2>
+<div class="vals"><div><h3>Confort</h3><p>Literie soignée, cuisine équipée et climatisation.</p></div><div><h3>Sérénité</h3><p>Un cadre calme, propre et sécurisé.</p></div><div><h3>Réactivité</h3><p>Une équipe qui répond vite, avant et pendant le séjour.</p></div></div>
+</div></section>
+<section><div class="wrap">
+<h2>Comment cela se passe</h2>
+<ol class="steps"><li><span>1</span><h3>Demande</h3><p>Vous indiquez vos dates et vos besoins.</p></li><li><span>2</span><h3>Confirmation</h3><p>Nous vous proposons un logement et un tarif clair.</p></li><li><span>3</span><h3>Arrivée</h3><p>Nous vous accueillons et vous présentons le logement.</p></li><li><span>4</span><h3>Séjour</h3><p>Nous restons disponibles jusqu’à votre départ.</p></li></ol>
+</div></section>
+<section><div class="wrap"><div class="band">
+<div><h2>Réservez directement, simplement.</h2><p>Écrivez-nous vos dates : nous vous répondons rapidement.</p></div>
+<button class="btn o" type="button">Réserver un séjour</button>
+</div></div></section>
+</main>
+<footer>
+<div class="wrap">
+<div><h3>Résidences Ébène</h3><p>Résidences meublées à Cocody, Abidjan : studios et appartements pour courts et longs séjours.</p></div>
+<div><h3>Contact</h3><p>+225 00 00 00 00 00</p><p>contact@votre-domaine.ci</p><p>Cocody, Abidjan, Côte d’Ivoire</p></div>
+<div><h3>Horaires</h3><p>Accueil 7 j / 7 : 7h – 21h</p></div>
+</div>
+<div class="copy">© 2026 Résidences Ébène. Tous droits réservés.</div>
+</footer>
+</body>
+</html>
